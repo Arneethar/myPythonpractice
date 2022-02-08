@@ -83,16 +83,10 @@ try:
       remainder = balance 
     elif code == "exit" or code == "quit" or code == "q":
       print("Thank you for banking with us")
+      print("")
       break
     else:
       print("please choose a valid number")
     
 except NameError:
     print("Incorrect details\nKindly input your right details")
-
-
-
-  
-
-
-
