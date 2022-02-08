@@ -1,8 +1,20 @@
 #!/usr/bin/python3
+"""
+This code is a simple illustration of a bank atm.
+We have a list holding our customers, this list only has a demo uwername and password.
+We check if the inputted username is available on the system, then we check if the password is correct.
+"""
 myCustomers = {"lucy gamble": 1234,"anita matthew": 2345}
 
 # This function checks if the username is available and if the password is correct
 def isACustomer(name,password,myCustomers):
+  """
+  This function checks if the username is available and if the password is correct
+  Args:
+    first param - name;
+    second param - password;
+    third param - myCustomers;(which is the list holding the customers name and password)
+  """
   unknown ="not found"
   for keys,values in myCustomers.items():
     if keys == name:
