@@ -72,38 +72,38 @@ try:
     newName = Username.title()
     print(f"Hi {newName}")
     code = 0
-  code = input("Enter the amount you wish to deposit\n> ")
-  deposit = int(code)
-  print("")
-  print("To view balance input 1")
-  print("To withdraw input 2")
-  print("To deposit new cash input 3")
-# code = input("Choose a number\n> ")
-  balance = deposit
-  while code:
+    code = input("Enter the amount you wish to deposit\n> ")
+    deposit = int(code)
+    print("")
+    print("To view balance input 1")
+    print("To withdraw input 2")
+    print("To deposit new cash input 3")
+#   code = input("Choose a number\n> ")
+    balance = deposit
+    while code:
 # != "exit":
-    print("")
-    code = input("Choose a number\n> ")
-    print("")
-    remainder = balance
-    if code == "1":
-     remainder = enquiry(balance)
-     print(f"Account balance")
-     print("${:.2f}".format(remainder))
-     print("***********")
-     print("")
-    elif code == "2": 
-      balance = withdraw(remainder)
-      remainder = balance
-    elif code == "3":
-      balance = deposit2(balance)
-      remainder = balance 
-    elif code == "exit" or code == "quit" or code == "q":
-      print("Thank you for banking with us")
       print("")
-      break
-    else:
-      print("please choose a valid number")
+      code = input("Choose a number\n> ")
+      print("")
+      remainder = balance
+      if code == "1":
+       remainder = enquiry(balance)
+       print(f"Account balance")
+       print("${:.2f}".format(remainder))
+       print("***********")
+       print("")
+      elif code == "2": 
+        balance = withdraw(remainder)
+        remainder = balance
+      elif code == "3":
+        balance = deposit2(balance)
+        remainder = balance 
+      elif code == "exit" or code == "quit" or code == "q":
+        print("Thank you for banking with us")
+        print("")
+        break
+      else:
+        print("please choose a valid number")
     
 except NameError:
     print("Incorrect details\nKindly input your right details")
