@@ -35,6 +35,7 @@ def deposit2(balance):
   code1 = input("Enter the amount you wish to deposit\n> ")
   deposit2 = int(code1)
   print("You have just deposited ${:.2f}".format(deposit2))
+  print("***********")
   return deposit2 + balance
 
   # This function allows the user to withdraw money
@@ -43,9 +44,11 @@ def withdraw(balance):
   if withdraw < balance:
     balance = balance - withdraw
     print("You have just withdrawn ${:.2f}".format(withdraw))
+    print("***********")
     return balance   
   else:
     print("Insufficient funds, please deposit\nor kindly withdraw a lesser amount")
+    print("***********")
     print("")
     return balance
 # End of functions
@@ -70,7 +73,8 @@ try:
     print(f"Hi {newName}")
     code = 0
   code = input("Enter the amount you wish to deposit\n> ")
-  deposit = int(code)         
+  deposit = int(code)
+  print("")
   print("To view balance input 1")
   print("To withdraw input 2")
   print("To deposit new cash input 3")
@@ -86,6 +90,7 @@ try:
      remainder = enquiry(balance)
      print(f"Account balance")
      print("${:.2f}".format(remainder))
+     print("***********")
      print("")
     elif code == "2": 
       balance = withdraw(remainder)
